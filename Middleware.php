@@ -198,24 +198,3 @@ class Middleware
 		return array_shift( $r );;
 	}
 }
-
-/**
- *
- * Using the SDK
- *
- */
-$MV = new Middleware('1234', 'Iw5N12MYleOULxdfMH43SK9ZAmjPyFKtdhToiL38xIBz6ecdZxW');
-
-$ref1  = time().'_'.rand();
-$task1 = array('phone' => '+380989055434', 'nick' => 'Test Nick');
-$MV->add_task($ref1, 1635, $task1);
-
-$ref2  = time().'_'.rand();
-$task2 = array('phone' => '+380989052345', 'nick' => 'Test Nick 2');
-$MV->add_task($ref2, 1635, $task2);
-
-$res = $MV->send_tasks();
-
-echo $res;
-
-?>
