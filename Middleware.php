@@ -193,8 +193,9 @@ class Middleware
      *
      * @return string
      */
-    private function str2hex($str) {
-		$r = unpack('H*', $str) ;
-		return array_shift( $r );;
+    private function str2hex($str)
+    {
+		$r = unpack('H*', $str);
+		return array_shift( $r );
 	}
 }
