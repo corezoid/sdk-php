@@ -2,7 +2,7 @@
 
 #Basic Usage
 
-```
+```php
 // API user settings
 $api_login = '1234';
 $api_secret = 'Iw5N12MYleOULxdfMH43SK9ZAmjPyFKtdhToiL38xIBz6ecdZxW';
