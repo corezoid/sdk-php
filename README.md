@@ -1,21 +1,3 @@
 # SDK-PHP
 
-#Basic Usage
-
-```php
-// API user settings
-$api_login = '1234';
-$api_secret = 'Iw5N12MYleOULxdfMH43SK9ZAmjPyFKtdhToiL38xIBz6ecdZxW';
-
-// Init Middleware class
-$MV = new Middleware($api_login, $api_secret);
-
-// Add new task
-$ref1    = time().'_'.rand();
-$task1   = array('phone' => '+380989055434', 'nick' => 'Test Nick');
-$conv_id = 1635;
-$MV->add_task($ref1, $conv_id, $task1);
-
-// Send all tasks to Middleware
-$res = $MV->send_tasks();
-```
+Documentation http://www.middleware.biz/how_to_use/api/en/upload_data/php.html
