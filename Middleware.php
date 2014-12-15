@@ -28,38 +28,38 @@
  */
 class Middleware
 {
-	/**
+    /**
      * host Middleware
      */
-	private $_host = 'https://www.middleware.biz';
+    private $_host = 'https://www.middleware.biz';
 
-	/**
+    /**
      * Version API
      */
-	private $_version = '1';
+    private $_version = '1';
 
-	/**
+    /**
      * Format API
      */
-	private $_format = 'json';
+    private $_format = 'json';
 
-	/**
+    /**
      * User API
      */
-	private $_api_login;
+    private $_api_login;
 
-	/**
+    /**
      * API secret key
      */
-	private $_api_secret;
+    private $_api_secret;
 
-	/**
+    /**
      * Array tasks
      */
-	private $_tasks = array();
+    private $_tasks = array();
 
 
-	/**
+    /**
      * Constructor.
      *
      * @param string $api_login
@@ -67,7 +67,7 @@ class Middleware
      * 
      * @throws InvalidArgumentException
      */
-	public function __construct($api_login, $api_secret)
+    public function __construct($api_login, $api_secret)
     {
         if (empty($api_login)) {
             throw new InvalidArgumentException('api_login is empty');
@@ -197,5 +197,5 @@ class Middleware
     {
 		$r = unpack('H*', $str);
 		return array_shift( $r );
-	}
+    }
 }
