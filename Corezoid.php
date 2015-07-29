@@ -1,6 +1,6 @@
 <?php
 /**
- * Middleware Module
+ * Corezoid Module
  *
  * NOTICE OF LICENSE
  *
@@ -8,30 +8,30 @@
  * that is available through the world-wide-web at this URL:
  * http://opensource.org/licenses/osl-3.0.php
  *
- * @category        Middleware
- * @package         Middleware/Middleware
+ * @category        Corezoid
+ * @package         Corezoid/Corezoid
  * @version         1.0
- * @author          Middleware.biz
- * @copyright       Copyright (c) 2013 Middleware.biz
+ * @author          corezoid.com
+ * @copyright       Copyright (c) 2013 corezoid.com
  * @license         http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  *
  * EXTENSION INFORMATION
  *
- * Middleware API       http://www.middleware.biz/how_to_use/api/en/
+ * Corezoid API       http://www.corezoid.com/how_to_use/api/en/
  *
  */
 
 /**
- * Middleware Class
+ * Corezoid Class
  *
- * @author      Middleware <support@middleware.biz>
+ * @author      Corezoid <support@mcorezoid.com>
  */
-class Middleware
+class Corezoid
 {
     /**
-     * host Middleware
+     * host Corezoid
      */
-    private $_host = 'https://www.middleware.biz';
+    private $_host = 'https://www.corezoid.com';
 
     /**
      * Version API
@@ -110,7 +110,7 @@ class Middleware
 
 
     /**
-     * Send tasks to Middleware
+     * Send tasks to Corezoid 
      *
      * @return string
      */
@@ -152,7 +152,7 @@ class Middleware
 
 
     /**
-     * Create URL to Middleware
+     * Create URL to Corezoid
      *
      * @param string $time
      * @param string $content
