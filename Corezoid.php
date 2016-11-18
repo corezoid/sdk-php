@@ -84,9 +84,9 @@ class Corezoid
     /**
      * Add new task
      *
-     * @param string $ref
-     * @param string $conv_id
-     * @param array $data
+     * @param string $ref External id for the task
+     * @param string $conv_id Corezoid process id
+     * @param array $data Sending data
      *
      * @throws InvalidArgumentException
      */
