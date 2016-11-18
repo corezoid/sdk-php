@@ -110,15 +110,18 @@ class Corezoid
 
 
     /**
-     * Send tasks to Corezoid 
+     * Send tasks to Corezoid
      *
+     * @param bool $clear_tasks Clears current tasks
      * @return string
      */
-    public function send_tasks()
+    public function send_tasks($clear_tasks = true)
     {
 
     	$content = json_encode(array('ops' => $this->_tasks));
-
+        if ($clear_tasks) {
+            $this->clear_tasks();
+        }
     	$time    = time();
 
     	$url = $this->make_url($time, $content);
@@ -132,6 +135,11 @@ class Corezoid
         $server_output = curl_exec($ch);
         curl_close($ch);
         return $server_output;
+    }
+
+    public function clear_tasks()
+    {
+        $this->_tasks = array();
     }
 
 
