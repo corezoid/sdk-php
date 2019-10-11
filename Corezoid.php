@@ -80,6 +80,12 @@ class Corezoid
         $this->_api_secret = $api_secret;
     }
 
+    
+    public function changeHost($host)
+    {
+
+      $this->_host = $host;
+    }
 
     /**
      * Add new task
@@ -132,6 +138,11 @@ class Corezoid
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $content);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+          'Content-Type: application/json'
+        ));
+
         $server_output = curl_exec($ch);
         curl_close($ch);
         return $server_output;
